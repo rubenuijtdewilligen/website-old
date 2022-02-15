@@ -1,0 +1,28 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "My personal website, built using Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubenuijtdewilligen/website.git"
+  },
+  "author": "Ruben Uijtdewilligen (rubenuijtdewilligen.com) <ruben@uijtdewilligenbv.nl>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/rubenuijtdewilligen/website/issues"
+  },
+  "homepage": "https://rubenuijtdewilligen.com",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
