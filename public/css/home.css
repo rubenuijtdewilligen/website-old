@@ -126,10 +126,6 @@ header {
   width: 100%;
 }
 
-html.done header {
-  animation: fade 3s backwards ease-out;
-}
-
 @media screen and (max-width: 640px) {
   header {
     font-size: 1.25vw;
@@ -151,29 +147,27 @@ header .content {
   margin-bottom: 6em;
 }
 
-header p {
-  margin: 1em 0;
-}
-
-header p:first-of-type {
-  margin-top: 0;
-}
-
-header p:last-of-type {
-  margin-bottom: 0;
-}
-
 header .more-arrow {
-  position: absolute;
-  left: calc(50% - 1.5em);
-  bottom: 2em;
-  width: 3em;
+  margin-top: 2.6em;
+  font-size: 2.6rem;
+  text-align: center;
+  animation: bounce 2s ease infinite;
 }
 
-header .more-arrow svg {
-  animation: bounce 3s infinite ease-in-out;
-  cursor: pointer;
-  fill: white;
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 /* Elements that spell name */
@@ -288,22 +282,7 @@ header .more-arrow svg {
   top: 0;
 }
 
-.a div:nth-child(1) {
-  left: 0;
-  top: 0;
-}
-
-.a div:nth-child(2) {
-  left: 1.3em;
-  top: 0;
-}
-
-.a div:nth-child(3) {
-  left: 0;
-  top: 1.3em;
-}
-
-.a div:nth-child(4) {
-  left: 1.3em;
-  top: 1.3em;
+/* About section */
+.about {
+  padding: 3rem;
 }
