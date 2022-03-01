@@ -19,7 +19,8 @@
   "homepage": "https://rubenuijtdewilligen.com",
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "mongoose": "^6.2.4"
   },
   "devDependencies": {
     "dotenv": "^16.0.0",

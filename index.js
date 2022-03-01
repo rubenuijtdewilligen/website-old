@@ -2,6 +2,13 @@
 require('dotenv').config();
 const express = require('express');
 const path = require('path');
+const mongoose = require('mongoose');
+
+// Connect to MongoDB
+const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/website';
+mongoose.connect(MONGO_URI, { useNewUrlParser: true }, () => {
+  console.log(`🌿 Connected to database on ${MONGO_URI}`);
+});
 
 // Initialize Express
 const app = express();
