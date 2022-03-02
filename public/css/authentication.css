@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: #181a1b;
+  color: white;
+}
+
+header {
+  height: 10em;
+  background: radial-gradient(farthest-side at 0 0, rgba(244, 184, 12, 0.5), rgba(244, 184, 12, 0)),
+    radial-gradient(farthest-side at 50% 0, rgba(255, 0, 129, 0.5), rgba(255, 0, 129, 0)),
+    radial-gradient(farthest-side at 100% 0, rgba(66, 198, 255, 0.5), rgba(66, 198, 255, 0));
+}
+
+p,
+label {
+  font-family: 'Space Mono', monospace;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.07);
+  padding: 3em;
+}
+
+.form input {
+  background: #181a1b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.8em;
+  margin: 0.3em 0 0.8em 0;
+}
+
+.form button {
+  background: #181a1b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.6em;
+  margin-top: 0.8em;
+}
+
+.success-message {
+  background: #00d66b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.6em;
+  margin-bottom: 1em;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  max-width: fit-content;
+}
+
+.success-message a {
+  color: white;
+  text-decoration: underline;
+}
+
+.error-message {
+  background: #db1f1f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.6em;
+  margin-bottom: 1em;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  max-width: fit-content;
+}

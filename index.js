@@ -1,6 +1,7 @@
 // Bring in Node modules
 require('dotenv').config();
 const express = require('express');
+const cookieParser = require('cookie-parser');
 const path = require('path');
 const mongoose = require('mongoose');
 
@@ -12,6 +13,8 @@ mongoose.connect(MONGO_URI, { useNewUrlParser: true }, () => {
 
 // Initialize Express
 const app = express();
+app.use(express.json());
+app.use(cookieParser());
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './views'));
 app.use('/static', express.static('public'));
