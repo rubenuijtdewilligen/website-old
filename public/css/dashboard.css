@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: #181a1b;
+  color: white;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+header {
+  height: 10em;
+  background: radial-gradient(farthest-side at 0 0, rgba(244, 184, 12, 0.5), rgba(244, 184, 12, 0)),
+    radial-gradient(farthest-side at 50% 0, rgba(255, 0, 129, 0.5), rgba(255, 0, 129, 0)),
+    radial-gradient(farthest-side at 100% 0, rgba(66, 198, 255, 0.5), rgba(66, 198, 255, 0));
+}
+
+p,
+label,
+a {
+  color: white;
+  font-family: 'Space Mono', monospace;
+}
+
+main {
+  padding: 3em;
+}
+
+a .button {
+  background: #181a1b;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 0.6em;
+  margin-top: 0.8em;
+}
+
+form select,
+form input,
+form button[type='submit'] {
+  background: #181a1b;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 0.6em;
+  margin-top: 0.8em;
+}
+
+.editor {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+}
+
+.editor #content {
+  flex: 0.6;
+  height: 500px;
+  padding: 0.6em;
+  border: none;
+  border-radius: 10px;
+}
+
+.editor #viewer {
+  flex: 1.4;
+  background: white;
+  height: 500px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 0.6em;
+  padding: 0.6em;
+}
+
+.success-message {
+  background: #00d66b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.6em;
+  margin-bottom: 1em;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  max-width: fit-content;
+}
+
+.error-message {
+  background: #db1f1f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.6em;
+  margin-bottom: 1em;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  max-width: fit-content;
+}

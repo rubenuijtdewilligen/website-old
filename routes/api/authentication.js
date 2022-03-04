@@ -9,7 +9,7 @@ const router = express.Router();
 
 // Bring in Mongoose models
 const User = require('../../models/User');
-const { shouldBeAuthenticated, shouldNotBeAuthenticated } = require('../../util/authentication');
+const { shouldBeAuthenticated } = require('../../util/authentication');
 
 // Routes
 router.post('/register', async (req, res) => {
